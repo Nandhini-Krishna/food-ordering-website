@@ -1,0 +1,14 @@
+/* .logo-svg
+{
+    height: 125px;
+    width: 200px;
+    transition: transform .3s cubic-bezier(.23,1,.32,1) 0ms;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    fill: #fc8019;
+    margin-top: 92px;
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+} */
