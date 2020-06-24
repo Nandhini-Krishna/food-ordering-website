@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import '../Signup/signupModal.css';
 
 class SignupModal extends Component {
     state = {  
@@ -14,37 +15,25 @@ class SignupModal extends Component {
         return ( 
             !isShowing ? <div></div> : 
             <div>
-	<div className="modal fade-scale" id="modal_sidebar">
-		<div className="modal-dialog">
-			<div className="modal-content">
-				<div className="modal-header">
-					<button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h4 className="modal-title">Modal title</h4>
-				</div>
-				<div className="modal-body">
-					<ul className="list-group">
-						<li className="list-group-item">Item list</li>
-						{/* <li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li>
-						<li class="list-group-item">Item list</li> */}
-					</ul>
-				</div>
-
-			</div>
-		</div>
-	</div>
+               <div>
+                   <div className="overlay" 
+                   style={{
+                    opacity : isShowing ? "1":"0",
+                    display : isShowing ? "block" : "none"}}>
+                    </div> 
+                    <div className="overlay-side"
+                      style={{
+                        opacity : isShowing ? "1":"0",
+                        display : isShowing ? "block" : "none"}}>
+                        <div className="overlay-padding">
+                        <div className="overlay-header">
+                        <span className="cross-btn">&#10006;</span>
+                        <div className="sign-text">Signup</div>
+                        </div>
+                        
+                        </div>
+                   </div>
+               </div>
             </div>
         );
     }

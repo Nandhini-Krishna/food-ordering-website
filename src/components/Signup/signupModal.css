@@ -1,38 +1,51 @@
-.modal-dialog{
-    margin:0;
+.overlay
+{
+    width: 64%;
     position: fixed;
-    top:0;
-    bottom:0;
-    right:auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+   
+}
+.overlay-side
+{
+    position: fixed;
+    top: 0;
+    height: 100%;
     background: #fff;
-    width:60%;
-    overflow-y: auto;
+    transition: transform .3s ease-out;
+    z-index: 2;
+    left: 64%;
+    right: 0px;
+    transform: translate(0%, 0px)
 }
-.modal-content{
-    border:none;
-    background: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    border-radius:0;
+.overlay-padding
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 478px;
 }
-.fade-scale {
-    transform: scale(1,0); /* scale(0); horizontal*/
-    opacity: 0;
-    -webkit-transition: all .25s linear;
-    -o-transition: all .25s linear;
-    transition: all .25s linear;
+.overlay-header
+{
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: 69px;
+    z-index: 1;
 }
-
-/*FOR BOOTSTRAP 3 just chengr class .show to .in*/
-/*
-.fade-scale.in {
-    opacity: 1;
-    transform: scale(1,1);
+.sign-text
+{
+    margin-top: 35px;
+    float: left;
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
 }
-*/
-
-.fade-scale.show {
-    opacity: 1;
-    transform: scale(1,1); /* scale(1); horizontal*/
+.cross-btn
+{
+    color: #535665;
+    cursor: pointer;
+    font-weight: 600;
+    float: left;
+    font-size: x-large;
 }
